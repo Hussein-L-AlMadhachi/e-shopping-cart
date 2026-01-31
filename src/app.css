@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Primary colors */
+  --color-primary: #5e5e5e;
+  --color-primary-hover: #3d3d3d;
+  --color-primary-light: rgba(139, 139, 139, 0.1);
+  --color-primary-shadow: rgba(131, 131, 131, 0.2);
+
+  /* Danger/Delete colors */
+  --color-danger: #c45c5c;
+  --color-danger-hover: #a84a4a;
+  --color-danger-light: rgba(196, 92, 92, 0.1);
+  --color-danger-shadow: rgba(196, 92, 92, 0.2);
+
+  /* Success colors */
+  --color-success: #5c9a6e;
+  --color-success-hover: #4a8059;
+
+  /* Background colors */
+  --color-bg-page: #f0efed;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #fafaf9;
+  --color-bg-input: #f7f6f5;
+  --color-bg-modal-backdrop: rgba(0, 0, 0, 0.4);
+
+  /* Border colors */
+  --color-border: #dddbd8;
+  --color-border-light: #e8e6e3;
+  --color-border-input: #c9c7c4;
+  --color-border-input-focus: var(--color-primary);
+
+  /* Text colors */
+  --color-text-primary: #5e5e5e;
+  --color-text-secondary: #787878;
+  --color-text-muted: #969696;
+  --color-text-inverse: #ffffff;
+
+  /* Skeleton loading */
+  --color-skeleton: #e5e3e0;
+  --color-skeleton-highlight: #f0efed;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Typography */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: light;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-page);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-bg-page);
+}
+
+#app {
+  width: 100%;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-border-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Selection styling */
+::selection {
+  background: var(--color-primary-light);
+  color: var(--color-text-primary);
+}
